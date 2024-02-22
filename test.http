@@ -1,0 +1,117 @@
+GET http://localhost:5055/pizze HTTP/1.1
+
+####
+GET http://localhost:5055/ingredients HTTP/1.1
+
+####
+GET http://localhost:5055/frieds HTTP/1.1
+
+####
+GET http://localhost:5055/drinks HTTP/1.1
+
+####
+GET http://localhost:5055/adv HTTP/1.1
+
+####
+POST http://localhost:5055/adv/create HTTP/1.1
+Content-Type: application/json
+
+{
+    "img": "https://images.unsplash.com/photo-1541745537411-b8046dc6d66c?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHBpenphfGVufDB8fDB8fHww",
+    "title": " Blanche Pizza",
+    "subtitle": "Base of pizzas are white, without tomato sauce, with different ingredients, veggie and also vegetables"
+}
+
+####
+
+POST http://localhost:5055/pizze/create HTTP/1.1
+Content-Type: application/json
+
+{
+    "img": "https://www.tasteatlas.com/images/dishes/6c6690413c134dc18c3d7b38991f7aaf.jpg?mw=1300",
+    "title": "Carbonara",
+    "ingredients" : "tomato,pancetta,pecorino,mozzarella,eggs,parsley",
+    "description" : "Pizza carbonara consists of a basic pizza dough covered with tomato sauce and topped with slices of salty pancetta, eggs, and cheese.",
+    "price" : 9.50,
+    "category" : "classic",
+    "subtitle": "Pizza carbonara"
+}
+
+####
+####
+
+POST http://localhost:5055/pizze/create HTTP/1.1
+Content-Type: application/json
+
+{
+    "img": "https://www.tasteatlas.com/images/dishes/b0a82c12f5b14d89979fc5b110c8ba2a.jpg?mw=1300",
+    "title": "Parmiggiana",
+    "ingredients" : "Tomato, eggplant,grana Padano,mozzarella,basil,oil evo",
+    "description" : "Inspired by another Italian dish - the traditional Southern Italian specialty, known as parmigiana di melanzane or eggplant parmesan - pizza parmigiana is a tasty twist on this dish that uses the dish's main ingredients as toppings.",
+    "price" : 10.50,
+    "category" : "special",
+    "subtitle": "Pizza parmigiana"
+}
+
+####
+####
+
+POST http://localhost:5055/pizze/create HTTP/1.1
+Content-Type: application/json
+
+{
+    "img": "https://www.ristorantepizzeriapummaro.com/wp-content/uploads/2022/05/Mimosa-2.jpg",
+    "title": "Mimosa",
+    "ingredients" : "Fiordilatte dairy “Monti Lucani”, corn, cream, cooked ham without polyphosphates, Grana D.O.P., Basil, I.G.P. Oil",
+    "description" : "Pizza pesto Genovese is a variety of Italian pizza that is traditionally topped with pieces of mozzarella di bufala and the famous pesto ",
+    "price" : 7.50,
+    "category" : "white",
+    "subtitle": "Pizza Mimosa"
+}
+
+####
+
+GET http://localhost:5055/pizze/category/white HTTP/1.1
+
+####
+
+DELETE http://localhost:5055/pizze/delete/65c64583836ab7c6f541bdc9 HTTP/1.1
+
+####
+
+
+
+#### DRINKS ####
+
+####
+POST http://localhost:5055/drinks/create HTTP/1.1
+Content-Type: application/json
+
+{
+    "img": "https://d5l1pnk7dv8vr.cloudfront.net/ARTICOLI/L_a3042.png",
+    "title": "Coca Cola 1l",
+    "description" : "Coca Cola",
+    "price" : 3.00
+}
+
+#####
+####
+POST http://localhost:5055/frieds/create HTTP/1.1
+Content-Type: application/json
+
+{
+    "img": "https://cdn.tasteatlas.com//images/dishes/1df1edf1a9464534b85f25911811fdf8.jpg?w=905&h=510",
+    "title": "Pizzelle Napoletane ",
+    "description" : "Pizzelle Napoletane ",
+    "price" : 6.00,
+    "ingredients": "null"
+}
+
+#####
+
+PATCH http://localhost:5055/adv/update/65b67676f6f5a311e02240a7 HTTP/1.1
+Content-Type: application/json
+
+{
+    "img" : "https://images.unsplash.com/photo-1593504049359-74330189a345?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHBpenphJTIwem9sYXxlbnwwfHwwfHx8MA%3D%3D"
+}
