@@ -109,9 +109,9 @@ Content-Type: application/json
 
 #####
 
-PATCH http://localhost:5055/adv/update/65b67676f6f5a311e02240a7 HTTP/1.1
+PATCH http://localhost:5055/adv/update/65b6702af6f5a311e022409e HTTP/1.1
 Content-Type: application/json
 
 {
-    "img" : "https://images.unsplash.com/photo-1593504049359-74330189a345?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHBpenphJTIwem9sYXxlbnwwfHwwfHx8MA%3D%3D"
+    "title" : "Special Pizza"
 }
